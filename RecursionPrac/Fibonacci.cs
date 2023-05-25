@@ -4,9 +4,12 @@ namespace RecursionPrac
 {
     internal class Fibonacci
     {
-        internal bool Get(int v)
+        public long Get(int n)
         {
-            throw new NotImplementedException();
+            Console.WriteLine(n + " ");
+            if(n < 0) { return 0; }
+            if(n == 1) { return 1; }
+            return Get(n - 2) + (n - 1);
         }
     }
 }
